@@ -1,8 +1,8 @@
 import React from 'react';
 import BurgerMenu from './BurgerMenu';
-import { Link } from 'react-router-dom';
+import { Link } from 'gatsby';
 import { moveToAbout, moveToWork } from './MoveTo';
-import logo from './images/logo.png'
+import logo from '../images/logo.png'
 import './Nav.css';
 
 function Nav(){

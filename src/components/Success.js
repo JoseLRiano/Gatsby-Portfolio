@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import mailBox from './images/mailBox.png';
+import mailBox from '../images/mailBox.png';
 import './Success.css';
 
 

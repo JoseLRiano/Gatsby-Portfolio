@@ -1,7 +1,7 @@
 import React from 'react';
 import './Footer.css';
-import whiteLogo from './images/whiteLogo.png';
-import { Link } from 'react-router-dom';
+import whiteLogo from '../images/whiteLogo.png';
+import { Link } from 'gatsby';
 
 export default function Footer(){
     return(

@@ -1,10 +1,10 @@
 import React from 'react';
-import adoption from './images/adoption.jpg';
-import sebas from './images/sebas.png';
-import game from './images/game.png';
-import list from './images/list.png';
-import poke from './images/poke.jpg';
-import jokes from './images/jokes.png';
+import adoption from '../images/adoption.jpg';
+import sebas from '../images/sebas.png';
+import game from '../images/game.png';
+import list from '../images/list.png';
+import poke from '../images/poke.jpg';
+import jokes from '../images/jokes.png';
 import './Work.css';
 
 export default function Work(){

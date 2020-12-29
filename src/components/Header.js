@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSpring, animated, config } from 'react-spring';  
-import Avatar from './images/avatar.png';
+import Avatar from '../images/avatar.png';
 // import computer from './images/computer.png';
 import './Header.css';
 

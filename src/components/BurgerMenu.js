@@ -20,8 +20,6 @@ const BurgerMenu = () => {
         }, [ref]);
     }
 
-
-
     
     const MenuAnimation = useSpring({
         opacity: isOpen ? 1 : 0,

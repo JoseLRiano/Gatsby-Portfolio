@@ -1,11 +1,11 @@
 import React from 'react';
-import tag from './images/tag.png';
-import css from './images/css.png';
-import html from './images/html.png';
-import js from './images/js.png';
-import npm from './images/npm.png';
-import react from './images/react.png';
-import vs from './images/vs.png';
+import tag from '../images/tag.png';
+import css from '../images/css.png';
+import html from '../images/html.png';
+import js from '../images/js.png';
+import npm from '../images/npm.png';
+import react from '../images/react.png';
+import vs from '../images/vs.png';
 import './Experience.css';
 
 export default function Experience(){

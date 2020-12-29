@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useHistory } from "react-router";
 import emailjs from 'emailjs-com';
-import logo from './images/logo.png';
-import Avatar from './images/avatar.png';
+import logo from '../images/logo.png';
+import Avatar from '../images/avatar.png';
 import './Contact.css';
 
 export default function Contact(){
