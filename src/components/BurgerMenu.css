@@ -1,0 +1,33 @@
+
+.Menu-Right {
+    position: fixed;
+    background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+    color: #fafafa;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 100vh;
+    z-index: 1;
+}
+.Burger-btn{
+    margin-right: 2rem;
+    z-index: 2;
+}
+.Burger-bar {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-top: 5rem;
+    color: #fff;
+}
+.Burger-bar li{  
+    margin: 1rem;
+}
+.Burger-item {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fafafa;
+    cursor: pointer;
+}
+

@@ -1,0 +1,78 @@
+.Nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 15vh;
+}
+
+.Nav-bar{
+    display:flex;
+    padding: 2rem 4rem;
+    list-style: none;
+}
+
+.Nav-item {
+    text-decoration: none;
+    border: 4px solid transparent;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 46px;
+    position: relative;
+    padding: 0;
+    margin: 0 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #000;
+    transition: .45s ease;
+}
+
+.Nav-item:hover{
+    cursor: pointer;
+    /* color: #57B3FC; */
+}
+.Nav-item::after {
+    width: 0%;
+    height: 2px;
+    display: block;
+    background-color: rgba(87, 179, 252, 0.8);
+    content: " ";
+    position: absolute;
+    top: 44px;
+    left: 50%;
+    transition: left 0.4s cubic-bezier(0.215, 0.610, 0.355, 1),
+    width 0.4s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+.Nav-item:hover::after{
+    width: 100%;
+    left: 0;
+}
+
+.Nav-logo{
+    width: 10rem;
+    padding-left: 2rem;
+    height: 11rem;
+}
+.Burger-Menu {
+    display: none;
+}
+
+@media screen and (max-width: 767px){
+    .Nav-logo{
+        width: 8rem;
+        height: 9rem;
+        padding-left: 1rem;
+    }
+    .Nav-bar {
+        display: none;
+        padding: 2rem 1rem;
+        margin-right: 1rem;
+    }
+    .Nav-item {
+        font-size: 1.1rem;
+        padding: 0 0.5rem;
+    }
+    .Burger-Menu {
+        display: flex;
+    }
+}

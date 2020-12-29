@@ -1,0 +1,28 @@
+.Success {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Success img {
+    width: 40rem;
+    height: 40rem;
+    margin: -10rem 0;
+}
+.Success-btn {
+    text-decoration: none;
+    color: #551A8B;
+    margin: 3rem;
+    border: 1px solid #551A8B;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    font-size: 1.3rem;
+    transition: .5s ease;
+}
+
+.Success-btn:hover {
+    background-color: #551A8B;
+    color: #fff;
+}

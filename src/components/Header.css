@@ -1,0 +1,83 @@
+.Header {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+    color: #0a0a0a;
+    font-family: 'Lato', sans-serif;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+.Header-Text {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+.Header-Text h3{
+    font-size: 1.4rem;
+    font-weight: lighter;
+}
+
+.Header .Header-Image{
+   display: flex;
+   justify-content: center;
+    align-items: center;
+    background: linear-gradient(110deg, #fce77d 50%, #f96167 50%) ;
+    border-radius: 50%;
+   -webkit-box-shadow: 1px 3px 3px 1px #ccc;
+    -moz-box-shadow: 1px 3px 3px 1px #ccc;
+    box-shadow: 1px 3px 3px 1px #ccc;
+}
+
+.Header-Avatar {
+    width: 300px;
+}
+
+.Header-Button {
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    border: 2px solid #0a0a0a;
+    font-size: 1.3rem;
+    box-sizing: inherit;
+    transition: all 0.5s ease;
+}
+.Header-Button:hover {
+    background-image: linear-gradient(to bottom, #48c6ef 0%, #6f86d6 100%);
+    color: #FFFFFF;
+    border: 2px solid #1f74ba;
+    cursor: pointer;
+}
+.Header-Button:hover .Header-Icon::before {
+    content: "\f063";
+}
+ 
+.Header-Button .Header-Icon {
+    padding-left: 1rem;
+    font-size: 1.3rem;
+}
+.Header-Button:focus {
+    outline: none;
+}
+.Header-computer {
+    width: 860px;
+    margin-bottom: -10.8rem;
+}
+
+@media screen and (max-width: 767px){
+    .Header{
+        padding-bottom: 0rem;
+    }
+    .Header-Text{
+        font-size: 1rem;
+    }
+    .Header-Text h3{
+        font-size: 1rem;
+    }
+    
+    .Header-Avatar {
+        width: 200px;
+    }
+}
+
