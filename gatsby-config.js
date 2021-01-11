@@ -12,10 +12,10 @@ module.exports = {
       options: {
         fonts: [
           `Lato`,
-          'Playfair'
+          `Playfair`
         ],
-        display: 'swap'
-      }
+        display: "swap"
+      },
     },    
   ],
 }
