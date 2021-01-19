@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import adoption from '../images/adoption.jpg';
 import sebas from '../images/sebas.png';
 import game from '../images/game.png';
@@ -39,7 +41,7 @@ export default function Work(){
             <div className="Work-examples">
                 {projects}
             </div>
-            <a className="Work-btn" href="https://github.com/JoseLRiano" target="_blank"><i className="fa fa-github" aria-hidden="true"></i> See more on GitHub</a>
+            <a className="Work-btn" href="https://github.com/JoseLRiano" target="_blank"><FontAwesomeIcon icon={faGithub} pull="left" />See more on GitHub</a>
         </div> 
     );
 }
