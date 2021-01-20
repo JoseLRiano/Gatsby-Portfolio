@@ -1,5 +1,7 @@
 import React from 'react';
 import { useSpring, animated, config } from 'react-spring';  
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import Avatar from '../images/avatar.png';
 // import computer from './images/computer.png';
 import './Header.css';
@@ -34,7 +36,10 @@ const Header = () => {
                 <div className="Header-Image" onMouseMove={({ clientX: x, clientY: y }) => setMovement({ xy: calc(x, y) })}>
                     <animated.img className="Header-Avatar" src={Avatar} alt="Avatar" style={{ transform: movement.xy.interpolate(trans) }} />
                 </div>
-                <button onClick={handleClick} className="Header-Button">View my work <i className="Header-Icon fa fa-arrow-right" aria-hidden="true"></i></button>
+                <button onClick={handleClick} className="Header-Button">View my work 
+                    <FontAwesomeIcon className="Header-Icon" icon={faArrowDown} pull="right" />
+                    {/* <i className="Header-Icon fa fa-arrow-right" aria-hidden="true"></i> */}
+                </button>
                 {/* <img className="Header-computer" src={computer} alt="computer and laptop image" /> */}
             </animated.div>
         </div>
