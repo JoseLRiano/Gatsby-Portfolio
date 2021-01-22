@@ -9,19 +9,33 @@ import Footer from './Footer';
 import Success from './Success';
 import './App.css';
 
+import { StaticQuery, graphql } from 'gatsby';
 
 
 function App() {
   
   return (
+    <StaticQuery query={graphql`{
+          adoption: file(relativePath: {eq: "adoption.jpg"}) {
+              childImageSharp {
+                  fluid(maxWidth: 1600) {
+                      ...GatsbyImageSharpFluid
+                  }
+              }
+          }
+      }`}
+    render={(data) =>(
     <div>
       <Nav />
       <Header />
       <About />
       <Experience />
-      <Work />
+      <Work data={data}/>
       <Footer />
     </div>
+    )} 
+    />
+
   );
 }
 

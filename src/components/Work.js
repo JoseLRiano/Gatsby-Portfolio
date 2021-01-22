@@ -1,4 +1,7 @@
 import React from 'react';
+import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import adoption from '../images/adoption.jpg';
@@ -9,7 +12,8 @@ import poke from '../images/poke.jpg';
 import jokes from '../images/jokes.png';
 import './Work.css';
 
-export default function Work(){
+const Work = ({data}) => {
+    console.log(data);
     let pics = [
         {name: 'sebastian website image', image: sebas, description: 'Photgrapher Website using React', url:"http://sebastiantoro.me"}, 
         {name: 'adoption app image', image: adoption ,description: 'Adoption App consumes petfinder API', url:"https://joselriano.github.io/AdoptionApp/" }, 
@@ -34,14 +38,24 @@ export default function Work(){
         );
     return (
         <div id="Work" className="Work">
-            <div className="Work-title">
+                <div className="Work-title">
                 <h1>My Recent Work</h1>
                 <p>These are some of my projects I've worked on recently.</p>
-            </div>
-            <div className="Work-examples">
-                {projects}
-            </div>
-            <a className="Work-btn" href="https://github.com/JoseLRiano" target="_blank"><FontAwesomeIcon icon={faGithub} pull="left" />See more on GitHub</a>
+                </div>
+                <div className="Work-examples">
+                    {projects}
+                </div>
+                <a className="Work-btn" href="https://github.com/JoseLRiano" target="_blank"><FontAwesomeIcon icon={faGithub} pull="left" />See more on GitHub</a>
         </div> 
     );
 }
+export default Work;
+
+
+
+
+
+
+
+
+  
