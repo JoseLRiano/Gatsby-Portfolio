@@ -18,10 +18,45 @@ function App() {
     <StaticQuery query={graphql`{
           adoption: file(relativePath: {eq: "adoption.jpg"}) {
               childImageSharp {
-                  fluid(maxWidth: 1600) {
+                  fluid(maxWidth: 300) {
                       ...GatsbyImageSharpFluid
                   }
               }
+          }
+          jokes: file(relativePath: {eq: "jokes.png"}) {
+            childImageSharp {
+              fluid(maxWidth: 1600) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          poke: file(relativePath: {eq: "poke.jpg"}) {
+            childImageSharp {
+              fluid(maxWidth: 1600) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          sebas: file(relativePath: {eq: "sebas.png"}) {
+            childImageSharp {
+              fluid(maxWidth: 1600) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          list: file(relativePath: {eq: "list.png"}) {
+            childImageSharp {
+              fluid(maxWidth: 1600) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          game: file(relativePath: {eq: "game.png"}) {
+            childImageSharp {
+              fluid(maxWidth: 1600) {
+                ...GatsbyImageSharpFluid
+              }
+            }
           }
       }`}
     render={(data) =>(

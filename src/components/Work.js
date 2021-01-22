@@ -13,18 +13,18 @@ import jokes from '../images/jokes.png';
 import './Work.css';
 
 const Work = ({data}) => {
-    console.log(data);
+    console.log(data.sebas.childImageSharp);
     let pics = [
-        {name: 'sebastian website image', image: sebas, description: 'Photgrapher Website using React', url:"http://sebastiantoro.me"}, 
-        {name: 'adoption app image', image: adoption ,description: 'Adoption App consumes petfinder API', url:"https://joselriano.github.io/AdoptionApp/" }, 
-        {name: 'Lights Out game image', image: game, description: 'React Lights Out game', url:"https://joselriano.github.io/LightsOut/" }, 
-        {name: 'list App', image: list, description: 'Grocery List App made using React Hooks', url:"https://joselriano.github.io/GroceriesList/" }, 
-        {name: 'pokemon image App', image: poke, description: 'Pokemon card game using API', url:"https://joselriano.github.io/PokedexGame/" },
-        {name: 'Joke list image App', image: jokes, description: 'List of Jokes uses API to fetch new Jokes and local storage.', url:"https://joselriano.github.io/DadJokes/" }];
+        {name: 'sebastian website image', image: data.sebas.childImageSharp.fluid , description: 'Photgrapher Website using React', url:"http://sebastiantoro.me"}, 
+        {name: 'adoption app image', image: data.adoption.childImageSharp.fluid ,description: 'Adoption App consumes petfinder API', url:"https://joselriano.github.io/AdoptionApp/" }, 
+        {name: 'Lights Out game image', image: data.game.childImageSharp.fluid, description: 'React Lights Out game', url:"https://joselriano.github.io/LightsOut/" }, 
+        {name: 'list App', image: data.list.childImageSharp.fluid, description: 'Grocery List App made using React Hooks', url:"https://joselriano.github.io/GroceriesList/" }, 
+        {name: 'pokemon image App', image: data.poke.childImageSharp.fluid, description: 'Pokemon card game using API', url:"https://joselriano.github.io/PokedexGame/" },
+        {name: 'Joke list image App', image: data.jokes.childImageSharp.fluid, description: 'List of Jokes uses API to fetch new Jokes and local storage.', url:"https://joselriano.github.io/DadJokes/" }];
     const projects =
         pics.map((project, i) => 
                 <div className="Work-box" key={i}>      
-                    <img className="Box-image" src={project.image}  alt={project.name} />
+                    <Img className="Box-image" fluid={project.image}  alt={project.name} />
                     <div className="Box-hide">
                         <h1 className="Box-project-title">
                             {project.description}
