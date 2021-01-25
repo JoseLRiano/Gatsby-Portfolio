@@ -1,19 +1,10 @@
 import React from 'react';
-import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import adoption from '../images/adoption.jpg';
-import sebas from '../images/sebas.png';
-import game from '../images/game.png';
-import list from '../images/list.png';
-import poke from '../images/poke.jpg';
-import jokes from '../images/jokes.png';
 import './Work.css';
 
 const Work = ({data}) => {
-    console.log(data.sebas.childImageSharp);
     let pics = [
         {name: 'sebastian website image', image: data.sebas.childImageSharp.fluid , description: 'Photgrapher Website using React', url:"http://sebastiantoro.me"}, 
         {name: 'adoption app image', image: data.adoption.childImageSharp.fluid ,description: 'Adoption App consumes petfinder API', url:"https://joselriano.github.io/AdoptionApp/" }, 
