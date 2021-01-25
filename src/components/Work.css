@@ -74,9 +74,9 @@
     color: white;
     transition: all .5s ease;
 }
-.Work-box:hover .Box-image{
+/* .Work-box:hover .Box-image{
     transform: scale(1.5);
-}
+} */
 .Box-hide .Box-arrow {
     padding: 0 0.5rem;
 }
