@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'gatsby';
 import { useHistory } from "react-router";
 import emailjs from 'emailjs-com';
 import logo from '../images/logo.png';
 import Avatar from '../images/avatar.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTimesCircle } from '@fortawesome/free-solid-svg-icons';
 import './Contact.css';
 
 export default function Contact(){
@@ -28,7 +30,7 @@ export default function Contact(){
         <div className="Contact">
             <div className="Contact-nav">
                 <Link to="/" ><img className="Nav-logo" src={logo} alt="logo" /></Link>
-                <Link className="Contact-back" to="/"><i className="fa fa-times" aria-hidden="true"></i></Link>
+                <Link className="Contact-back" to="/"><FontAwesomeIcon icon={faTimesCircle} /></Link>
             </div>
             <div className="Contact-main">
                 <img className="Contact-Avatar" src={Avatar} alt="Avatar" />
