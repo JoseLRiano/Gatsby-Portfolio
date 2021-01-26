@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useSpring, animated } from 'react-spring';
 import { moveToAbout, moveToWork } from './MoveTo';
-import { Link } from 'react-router-dom';
+import { Link } from 'gatsby';
 import './BurgerMenu.css';
 import useLockBodyScroll from './useLockBodyScroll';
 
