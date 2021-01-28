@@ -7,6 +7,7 @@ import Work from './Work';
 import Contact from './Contact';
 import Footer from './Footer';
 import Success from './Success';
+import { Seo }  from './Seo';
 import './App.css';
 
 import { StaticQuery, graphql } from 'gatsby';
@@ -61,6 +62,7 @@ function App() {
       }`}
     render={(data) =>(
     <div>
+      <Seo />
       <Nav />
       <Header />
       <About />
