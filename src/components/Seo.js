@@ -15,7 +15,7 @@ export const Seo = ({ description, keywords, title, image, url, author}) => {
                 const metaKeywords = keywords || ["Web Developer", "Front End Developer", "Software Developer", "Jose Riano", "Jose L Riano"];
                 return(
                     <Helmet 
-                        title={title}
+                        title={metaTitle}
                         meta={[
                             {
                                 name: `description`,
@@ -68,7 +68,10 @@ export const Seo = ({ description, keywords, title, image, url, author}) => {
                             } : []
                         )
                         }
-                        />
+                        >
+                            <title>{metaTitle}</title>
+                            <meta name="title" content={metaDescription} />
+                        </Helmet>
                 )
 
             }}

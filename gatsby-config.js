@@ -35,6 +35,7 @@ module.exports = {
         display: 'swap'
       }
     },
-    `gatsby-plugin-fontawesome-css`
+    `gatsby-plugin-fontawesome-css`,
+    `gatsby-plugin-react-helmet`,
   ]
 }
