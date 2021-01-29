@@ -68,10 +68,7 @@ export const Seo = ({ description, keywords, title, image, url, author}) => {
                             } : []
                         )
                         }
-                        >
-                            <title>{metaTitle}</title>
-                            <meta name="title" content={metaDescription} />
-                        </Helmet>
+                        />
                 )
 
             }}
