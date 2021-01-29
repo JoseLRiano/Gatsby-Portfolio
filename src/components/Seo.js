@@ -12,7 +12,7 @@ export const Seo = ({ description, keywords, title, image, url, author}) => {
                 const metaAuthor = author || data.site.siteMetadata.author;
                 const metaUrl = url || data.site.siteMetadata.url;
                 const metaImage = image || data.site.siteMetadata.image;
-                const metaKeywords = keywords || ["Web Developer", "Front End Developer", "Software Developer", "Jose Riano", "Jose L Riano"];\
+                const metaKeywords = keywords || ["Web Developer", "Front End Developer", "Software Developer", "Jose Riano", "Jose L Riano"];
                 return(
                     <Helmet 
                         title={title}
@@ -79,7 +79,7 @@ export const Seo = ({ description, keywords, title, image, url, author}) => {
 const detailsQuery = graphql`
     query DefaultSEOQuery {
         site {
-            siteMatadata {
+            siteMetadata {
                 title,
                 description,
                 author,

@@ -11,7 +11,7 @@ module.exports = {
   siteMetadata: {
     title: "Jose Riano Web Developer",
     description: "Jose Riano, Web Developer, Front End Developer, Software Developer",
-    url: "https://joseriano.com",
+    url: "https://www.joseriano.com",
     image: "/avatar.png",
     twitterUsername: "@joselriano",
     author: "Jose L Riano"
